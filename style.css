@@ -1,3 +1,7 @@
+
+
+
+
 /* Reset */
 * {
   margin: 0;
@@ -615,4 +619,96 @@ footer {
 .footer-social img:hover {
   transform: scale(1.2);
   opacity: 0.8;
+}
+
+
+.hero-title {
+  max-width: 600px;   /* no dejar que crezca demasiado */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem; /* centrado + separación inferior */
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+
+/*HUELLITAS DE FONDO*/
+
+/*HUELLITAS DE FONDO - tileable*/
+/*HUELLITAS DE FONDO - tileable*/
+#servicios {
+  position: relative;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 60px 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/*#servicios::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("patron-huellitas.png") repeat;
+  background-size: 400px 400px; 
+  opacity: 0.040; 
+  filter: blur(1px); 
+  pointer-events: none;
+  z-index: 0;
+}*/
+
+#servicios .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Quiénes somos */
+#quienes-somos {
+  background: linear-gradient(135deg, #f7fbff, #ffffff); /* azul cielo MUY tenue */
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+/* Servicios → ya tienes con azul agua y huellitas 🐾 */
+
+/* Nuestros Centros */
+#centros {
+  background: linear-gradient(135deg, #f4fbf5, #ffffff); /* verde menta pastel muy suave */
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+/* Nuestro Equipo */
+#equipo {
+  background: linear-gradient(135deg, #fffef6, #ffffff); /* amarillo mantequilla clarito */
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+/* Promociones */
+#promociones {
+  background: linear-gradient(135deg, #fff9f2, #ffffff); /* melocotón súper suave */
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+/* Opiniones */
+#opiniones {
+  background: linear-gradient(135deg, #faf5fb, #ffffff); /* lila lavanda muy clarita */
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+/* Contacto + Trabaja con nosotros */
+#contacto-trabaja {
+  background: linear-gradient(135deg, #f3fbfc, #ffffff); /* turquesa agua pastel */
+  padding: 60px 20px;
+  border-radius: 20px;
 }
