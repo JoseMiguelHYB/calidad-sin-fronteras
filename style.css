@@ -24,23 +24,119 @@ body {
 }
 
 /* Header */
+/* Navbar */
 header {
   background: #004aad;
-  color: white;
-  padding: 1rem;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .header-nav nav ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-header .logo h1 {
-  font-size: 1.4rem;
+header .header-nav nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.3s;
 }
 
-header span {
-  color: #ffcc00;
+header .header-nav nav ul li a:hover {
+  color: #e9c46a;
 }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url("https://images.pexels.com/photos/28171132/pexels-photo-28171132.jpeg?auto=compress&cs=tinysrgb&w=1600&h=600&dpr=1") no-repeat center/cover;
+  color: #fff;
+  position: relative;
+}
+
+.hero-title h1 {
+  font-size: 3.5rem;.hero-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.hero-title img {
+  display: block;
+  margin: 0 auto 10px auto;
+  max-width: 90%;
+  height: auto;
+}
+
+.hero-title .hero-main {
+  max-width: 500px; /* tamaño del título */
+}
+
+.hero-title .hero-tagline {
+  max-width: 350px; /* tamaño del slogan */
+}
+
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-title .main {
+  display: block;
+  font-weight: 900;
+  color: #000000; /* Amarillo cálido */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-title .tagline {
+  display: block;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #2a0fd6; /* Naranja amigable */
+}
+
+.hero-logo {
+  margin: 20px auto;
+  max-width: 220px;
+  display: block;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+.hero-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-buttons .cta {
+  display: inline-block;
+  font-size: 1.1rem;         /* más grande */
+  font-weight: bold;
+  background: #0f19de;       /* verde agua (confianza/naturaleza) */
+  color: #fff;               /* texto blanco */
+  padding: 15px 40px;        /* más espacio */
+  border-radius: 50px;       /* redondeado */
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.hero-buttons .cta:hover {
+  background: #0062d2;       /* verde más oscuro al pasar */
+  transform: scale(1.05);    /* efecto sutil de agrandar */
+}
+
+
 
 nav ul {
   list-style: none;
