@@ -1,4 +1,11 @@
-
+/* Colores principales */
+:root {
+  --amarillo: #dabc25;
+  --azul: #004AAD;
+  --naranja: #FF7B00;
+  --blanco: #FFFFFF;
+  --gris: #f5f5f5;
+}
 
 
 
@@ -157,8 +164,8 @@ nav ul li a:hover {
 
 /* Hero */
 .hero {
-  background: #ffcc00;
-  color: #004aad;
+  background: linear-gradient(180deg, #FFD500 0%, #fff8d6 100%);
+  color: #004AAD;
   text-align: center;
   padding: 2rem 1rem;
   position: relative;
