@@ -141,3 +141,61 @@ function animateScroll() {
 }
 
 animateScroll();
+
+
+// HISTORIAS
+// ===== Carrusel de Casos =====
+const track = document.querySelector('.carrusel-track');
+const prevBtn = document.querySelector('.carrusel-btn.prev');
+const nextBtn = document.querySelector('.carrusel-btn.next');
+const cards = document.querySelectorAll('.caso-card');
+
+let currentIndex = 0;
+
+// Función para actualizar el carrusel
+function updateCarrusel() {
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Botón siguiente
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  updateCarrusel();
+});
+
+// Botón previo
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  updateCarrusel();
+});
+
+// Auto-slide cada 8 segundos
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  updateCarrusel();
+}, 8000);
+
+
+// MURAL
+// Lightbox simple
+const muralImages = document.querySelectorAll('.mural-grid img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox .close');
+
+muralImages.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});

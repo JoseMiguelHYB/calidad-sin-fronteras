@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+
 <body>
   <!-- Header -->
   <header>
@@ -38,11 +45,11 @@
   <!-- Hero -->
   <section id="inicio" class="hero">
     <div class="container">
-      <h2>Bienvenidos a la Clínica Veterinaria</h2>
-      
+      <h2>Clínica Veterinaria</h2>
+
       <!-- Imagen de bienvenida -->
       <img src="img/bienvenidos.png" alt="Bienvenidos a la Clínica Veterinaria" class="hero-title">
-      
+
       <p>Nos cuidan porque somos parte de la familia 🐶🐱</p>
       <div class="hero-buttons">
         <a href="#contacto" class="cta">Pedir tu cita</a>
@@ -55,6 +62,13 @@
     </div>
   </section>
 
+  <!-- Horario visible -->
+  <div class="horario-atencion">
+    🕒 <strong>Horario de atención (Otoño):</strong>
+    Lunes a Viernes: 9:00 - 20:00 | Sábados: 10:00 - 14:00
+  </div>
+
+
   <main>
     <!-- Quiénes somos -->
     <section id="quienes-somos" class="section bg-light">
@@ -62,12 +76,23 @@
         <h2>Quiénes somos</h2>
         <p>
           En <strong>Clínica Veterinaria Calidad Sin Frontera</strong> llevamos más de 15 años cuidando de tus mascotas
-          con pasión, experiencia y tecnología de última generación.
-          Nuestro compromiso es ofrecer atención personalizada y cercana, porque sabemos que tu mascota es parte de tu
-          familia.
+          con
+          <strong>pasión, experiencia y la mejor tecnología</strong>. Somos una clínica de barrio, cercana y familiar,
+          donde creemos
+          que cada animal merece atención de calidad sin importar las circunstancias.
+        </p>
+        <p>
+          Nuestro compromiso va más allá de la medicina veterinaria: apoyamos a personas y asociaciones que dedican su
+          tiempo a
+          proteger a los animales de forma desinteresada, y ofrecemos ayuda a quienes no siempre pueden costear todos
+          los cuidados.
+        </p>
+        <p>
+          Porque para nosotros, <em>tu mascota es parte de tu familia… y también de la nuestra</em>. 🐾❤️
         </p>
       </div>
     </section>
+
 
     <!-- Servicios -->
     <section id="servicios" class="section">
@@ -75,44 +100,43 @@
         <h2>Servicios</h2>
         <div class="grid">
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=1" alt="Consultas generales">
+            <img src="https://images.pexels.com/photos/6235231/pexels-photo-6235231.jpeg" alt="Consultas generales">
             <h3>Consultas generales</h3>
             <p>Revisiones rutinarias y atención para detectar cualquier problema de salud a tiempo.</p>
           </div>
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=2" alt="Cirugías">
+            <img src="https://images.pexels.com/photos/7469216/pexels-photo-7469216.jpeg" alt="Cirugías">
             <h3>Cirugías</h3>
             <p>Procedimientos quirúrgicos con anestesia segura y seguimiento post-operatorio.</p>
           </div>
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=3" alt="Urgencias">
+            <img src="https://images.pexels.com/photos/6235241/pexels-photo-6235241.jpeg" alt="Urgencias 24h">
             <h3>Urgencias 24h</h3>
             <p>Atención inmediata en casos críticos, disponible los 365 días del año.</p>
           </div>
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=4" alt="Vacunaciones">
+            <img src="https://images.pexels.com/photos/6235236/pexels-photo-6235236.jpeg" alt="Vacunaciones">
             <h3>Vacunaciones</h3>
             <p>Programas de vacunación adaptados para perros, gatos y animales exóticos.</p>
           </div>
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=5" alt="Análisis clínicos">
+            <img src="https://images.pexels.com/photos/7469217/pexels-photo-7469217.jpeg" alt="Análisis clínicos">
             <h3>Análisis clínicos</h3>
             <p>Laboratorio propio para diagnósticos rápidos y precisos.</p>
           </div>
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=6" alt="Peluquería canina y felina">
+            <img src="https://images.pexels.com/photos/7210240/pexels-photo-7210240.jpeg"
+              alt="Peluquería canina y felina">
             <h3>Peluquería canina y felina</h3>
             <p>Servicios de estética y cuidado para que tu mascota luzca saludable y feliz.</p>
           </div>
-          <!-- 🔹 NUEVO SERVICIO -->
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=7" alt="Hospitalización">
+            <img src="https://images.pexels.com/photos/6235234/pexels-photo-6235234.jpeg" alt="Hospitalización">
             <h3>Hospitalización</h3>
             <p>Área equipada para el cuidado y recuperación de pacientes que requieren atención continua.</p>
           </div>
-          <!-- 🔹 NUEVO SERVICIO -->
           <div class="card">
-            <img src="https://picsum.photos/500/300?random=8" alt="Adiestramiento">
+            <img src="https://images.pexels.com/photos/7210262/pexels-photo-7210262.jpeg" alt="Adiestramiento">
             <h3>Adiestramiento y comportamiento</h3>
             <p>Programas de educación y modificación de conducta para perros de todas las edades.</p>
           </div>
@@ -120,7 +144,7 @@
       </div>
     </section>
 
-    <!-- Centros -->
+
     <!-- Centros -->
     <section id="centros" class="section">
       <div class="container">
@@ -132,7 +156,7 @@
           <div class="centro-mapa">
             <iframe id="mapa-centro"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.936484949503!2d-3.6480486!3d40.403017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42261f02d9cd9b%3A0x68e8ff9f93b9063!2sC.%20de%20Arroyo%20de%20Fontarr%C3%B3n%2C%2049%2C%2028030%20Madrid!5e0!3m2!1ses!2ses!4v1693244324230!5m2!1ses!2ses"
-              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+              width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
 
             <!-- Tiempos aproximados -->
@@ -152,6 +176,8 @@
               data-lat="40.403017" data-lng="-3.6480486">
               <h3>Centro Moratalaz</h3>
               <p>C. de Arroyo de Fontarrón, 49, LOCAL POSTERIOR, Moratalaz, 28030 Madrid</p>
+              <p>📧 <a href="mailto:moratalaz@clinica.com">moratalaz@clinica.com</a></p>
+              <p>📞 <a href="tel:+34910000111">910 000 111</a></p>
             </div>
 
             <!-- Vallecas -->
@@ -160,6 +186,8 @@
               data-lat="40.390928" data-lng="-3.6592426">
               <h3>Centro Vallecas</h3>
               <p>C. de Benjamín Palencia, 29, LOCAL LATERAL - Vallecas, Puente de Vallecas, 28038 Madrid</p>
+              <p>📧 <a href="mailto:vallecas@clinica.com">vallecas@clinica.com</a></p>
+              <p>📞 <a href="tel:+34910000222">910 000 222</a></p>
             </div>
 
             <!-- Vicálvaro -->
@@ -168,11 +196,14 @@
               data-lat="40.392275" data-lng="-3.6082716">
               <h3>Centro Vicálvaro</h3>
               <p>C. de Villacarlos, 9, Local posterior, Vicálvaro, 28032 Madrid</p>
+              <p>📧 <a href="mailto:vicalvaro@clinica.com">vicalvaro@clinica.com</a></p>
+              <p>📞 <a href="tel:+34910000333">910 000 333</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
 
     <!-- Nuestro equipo -->
@@ -182,59 +213,65 @@
         <p>Conoce a los profesionales que estarán cuidando de tu mascota:</p>
         <div class="grid team-grid">
 
+          <!-- Veterinarios -->
           <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Veterinaria">
+            <img src="https://images.pexels.com/photos/6235231/pexels-photo-6235231.jpeg" alt="Veterinaria directora">
             <h3>Dra. Patricia Alvarado</h3>
-            <p>Veterinaria Directora <br> Medicina en animales de compañía</p>
+            <p><span class="rol-vet">Veterinaria</span> <br> Medicina en animales de compañía</p>
           </div>
 
           <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Veterinaria">
+            <img src="https://images.pexels.com/photos/6235241/pexels-photo-6235241.jpeg" alt="Veterinaria cirujana">
             <h3>Dra. Mónica Yshikawa</h3>
-            <p>Veterinaria Generalista <br> Cirugía y urgencias</p>
+            <p><span class="rol-vet">Veterinaria</span><br> Cirugía y urgencias</p>
           </div>
 
           <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Veterinario">
+            <img src="https://images.pexels.com/photos/7469216/pexels-photo-7469216.jpeg" alt="Veterinario generalista">
             <h3>Dr. Pedro Vicente</h3>
-            <p>Veterinario Generalista <br> Medicina interna</p>
+            <p><span class="rol-vet">Veterinario</span><br> Medicina interna</p>
           </div>
 
           <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Auxiliar veterinaria">
-            <h3>María López</h3>
-            <p>Auxiliar Veterinaria <br> Atención al cliente</p>
-          </div>
-
-          <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="Auxiliar veterinario">
-            <h3>Carlos Ramírez</h3>
-            <p>Auxiliar Veterinario <br> Laboratorio y análisis clínicos</p>
-          </div>
-
-          <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Auxiliar veterinaria">
-            <h3>Ana Torres</h3>
-            <p>Auxiliar Veterinaria <br> Peluquería y estética</p>
-          </div>
-
-          <!-- 🔹 NUEVO: Veterinario especialista -->
-          <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Veterinario especialista">
+            <img src="https://images.pexels.com/photos/7469217/pexels-photo-7469217.jpeg"
+              alt="Veterinario especialista">
             <h3>Dr. Javier Medina</h3>
-            <p>Veterinario Especialista <br> Diagnóstico por imagen</p>
+            <p><span class="rol-vet">Veterinario</span><br> Diagnóstico por imagen</p>
           </div>
 
-          <!-- 🔹 NUEVO: Auxiliar (con icono neutro) -->
+          <!-- Auxiliares -->
           <div class="card team-card">
-            <img src="https://randomuser.me/api/portraits/women/35.jpg" alt="Veterinaria">
+            <img src="https://images.pexels.com/photos/6235236/pexels-photo-6235236.jpeg" alt="Auxiliar veterinaria">
+            <h3>María López</h3>
+            <p><span class="rol-aux">Auxiliar Veterinaria</span> <br> Atención al cliente</p>
+          </div>
+
+          <div class="card team-card">
+            <img src="https://images.pexels.com/photos/6235234/pexels-photo-6235234.jpeg"
+              alt="Auxiliar veterinario laboratorio">
+            <h3>Carlos Ramírez</h3>
+            <p><span class="rol-aux">Auxiliar Veterinario</span> <br> Laboratorio y análisis clínicos</p>
+          </div>
+
+          <div class="card team-card">
+            <img src="https://images.pexels.com/photos/7210240/pexels-photo-7210240.jpeg"
+              alt="Auxiliar veterinaria peluquería">
+            <h3>Ana Torres</h3>
+            <p><span class="rol-aux">Auxiliar Veterinaria</span> <br> Peluquería y estética</p>
+          </div>
+
+          <div class="card team-card">
+            <img src="https://images.pexels.com/photos/7210262/pexels-photo-7210262.jpeg" alt="Auxiliar de recepción">
             <h3>Lucía Fernández</h3>
-            <p>Auxiliar de Recepción <br> Gestión de citas y atención telefónica</p>
+            <p><span class="rol-adm">Adminsitrativo de Recepción </span><br> Gestión de citas y atención telefónica</p>
           </div>
 
         </div>
       </div>
     </section>
+
+
+
 
     <!-- Promociones -->
     <section id="promociones" class="section bg-light">
@@ -362,6 +399,123 @@
       </div>
     </section>
 
+    <!-- Casos tratados -->
+    <section id="casos" class="section casos-section bg-light">
+      <div class="container">
+        <h2 class="text-center">Casos que nos llenan de orgullo 🐾</h2>
+        <p class="text-center subtitulo">
+          Historias reales de recuperación y cariño en nuestra clínica.
+        </p>
+
+        <div class="carrusel-casos">
+          <!-- Botón previo -->
+          <button class="carrusel-btn prev">&#10094;</button>
+
+          <!-- Contenedor de cards -->
+          <div class="carrusel-track">
+            <!-- Caso 1 -->
+            <div class="caso-card">
+              <div class="caso-img">
+                <img src="https://images.pexels.com/photos/5731861/pexels-photo-5731861.jpeg" alt="Caso Luna">
+              </div>
+              <div class="caso-info">
+                <h3>Luna</h3>
+                <p><strong>Cómo llegó:</strong> Luna sufrió una fractura grave en su patita tras un accidente en el
+                  parque.</p>
+                <p><strong>Tratamiento:</strong> Fue operada por nuestro equipo, con fisioterapia y cuidados
+                  postoperatorios.</p>
+                <p><strong>Resultado:</strong> Hoy corre y juega felizmente sin dolor, ¡con energía renovada!</p>
+              </div>
+            </div>
+
+            <!-- Caso 2 -->
+            <div class="caso-card">
+              <div class="caso-img">
+                <img src="https://images.pexels.com/photos/5731893/pexels-photo-5731893.jpeg" alt="Caso Max">
+              </div>
+              <div class="caso-info">
+                <h3>Max</h3>
+                <p><strong>Cómo llegó:</strong> Max tenía una infección severa en la piel que le causaba dolor y caída
+                  de pelo.</p>
+                <p><strong>Tratamiento:</strong> Recibió medicación, baños terapéuticos y una dieta especial.</p>
+                <p><strong>Resultado:</strong> Su pelaje volvió a brillar y recuperó su vitalidad y confianza.</p>
+              </div>
+            </div>
+
+            <!-- Caso 3 -->
+            <div class="caso-card">
+              <div class="caso-img">
+                <img src="https://images.pexels.com/photos/4587996/pexels-photo-4587996.jpeg" alt="Caso Nube">
+              </div>
+              <div class="caso-info">
+                <h3>Nube</h3>
+                <p><strong>Cómo llegó:</strong> Nube tenía problemas respiratorios y falta de energía.</p>
+                <p><strong>Tratamiento:</strong> Se diagnosticó con precisión y se le aplicó un plan integral de
+                  cuidado.</p>
+                <p><strong>Resultado:</strong> Ahora respira fuerte y juega feliz con otros conejitos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón siguiente -->
+          <button class="carrusel-btn next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mural de pacientes felices -->
+<section id="mural" class="section mural-section">
+  <div class="container">
+    <h2 class="text-center">Nuestros Pacientes Felices 🐕🐾</h2>
+    <p class="text-center subtitulo">
+      Cada foto cuenta una historia de amor, cuidado y recuperación.
+    </p>
+
+    <!-- Collage de perritos y gatitos -->
+    <div class="mural-grid">
+      <img src="gato-balnquinegro.jpg" alt="Perro feliz">
+      <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Perrito jugando">
+      <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg" alt="Perrito tierno">
+      <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg" alt="Gatito jugando">
+      <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="Gato descansando">
+      <img src="barbi-oso.jpg" alt="Gatito tierno">
+      <img src="https://images.pexels.com/photos/5731861/pexels-photo-5731861.jpeg" alt="Perro recuperado">
+      <img src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg" alt="Gato en casa">
+      <img src="https://images.pexels.com/photos/4587988/pexels-photo-4587988.jpeg" alt="Perrito curioso">
+      <img src="https://images.pexels.com/photos/320014/pexels-photo-320014.jpeg" alt="Gato durmiendo">
+      <img src="https://images.pexels.com/photos/7210262/pexels-photo-7210262.jpeg" alt="Perrito adoptado">
+      <img src="https://images.pexels.com/photos/7210240/pexels-photo-7210240.jpeg" alt="Perrito feliz en casa">
+      <img src="bartolo-clinica.PNG" alt="Perro en clínica">
+      <img src="https://images.pexels.com/photos/4587994/pexels-photo-4587994.jpeg" alt="Perrito recuperado">
+      <img src="https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg" alt="Gatito curioso">
+
+      <!-- Nueva foto alargada horizontal -->
+      <img class="wide" src="https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg" alt="Perro corriendo en el campo">
+      
+      <!-- Nueva foto alargada vertical -->
+      <img class="tall" src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="Gato elegante de pie">
+      
+      <img src="https://images.pexels.com/photos/4588014/pexels-photo-4588014.jpeg" alt="Perrito con dueño">
+    </div>
+
+    <!-- Cuerda con tarjetitas -->
+    <div class="cuerda">
+      <div class="tarjeta">💖 Gracias por curarme</div>
+      <div class="tarjeta">🐾 Ahora corro feliz</div>
+      <div class="tarjeta">✨ Me devolvieron mi alegría</div>
+      <div class="tarjeta">🥰 Estoy sano otra vez</div>
+      <div class="tarjeta">🐶 Gracias por cuidarme</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
 
 
@@ -380,10 +534,13 @@
           <form>
             <input type="text" placeholder="Tu nombre" required>
             <input type="email" placeholder="Tu correo" required>
+            <!-- Nuevo campo para el nombre de la mascota -->
+            <input type="text" placeholder="Nombre de tu mascota" required>
             <textarea placeholder="Tu mensaje" required></textarea>
             <button type="submit">Enviar</button>
           </form>
         </div>
+
 
         <!-- Trabaja con nosotros -->
         <div class="trabaja">
