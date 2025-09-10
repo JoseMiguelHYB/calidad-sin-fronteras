@@ -16,25 +16,42 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="header-nav">
-            <button class="menu-toggle">☰</button>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#quienes-somos">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#centros">Centros</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="#promociones">Promo</a></li>
-                    <li><a href="#opiniones">Opiniones</a></li>
-                    <li><a href="#mural">Mural</a></li>
-                    <li><a href="#contacto-trabaja">Contacto</a></li>
-                    <li><a href="#contacto-trabaja">Trabaja</a></li>
-                </ul>
+        <div class="header-container">
+            <!-- Logo a la izquierda -->
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="img/logo1.PNG" alt="Logo Clínica Veterinaria">
+                </a>
+            </div>
 
-            </nav>
+            <!-- Navegación -->
+            <div class="header-nav">
+                <button class="menu-toggle">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#quienes-somos">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#centros">Centros</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#promociones">Promo</a></li>
+                        <li><a href="#opiniones">Opiniones</a></li>
+                        <li><a href="#mural">Mural</a></li>
+                        <li><a href="#contacto-trabaja">Contacto</a></li>
+                        <li><a href="#contacto-trabaja">Trabaja</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Logo a la derecha -->
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="img/logo2.PNG" alt="Logo2 Clínica Veterinaria">
+                </a>
+            </div>
         </div>
     </header>
+
 
     <!-- Hero -->
     <section class="hero" id="inicio">
@@ -53,11 +70,21 @@
         </div>
     </section>
 
-    <!-- Horario  de atención -->
+    <!-- Horario de atención -->
     <div class="horario-atencion">
-        🕒 <strong>Horario de atención (Otoño):</strong>
-        Lunes a Viernes: 9:00 - 20:00 | Sábados: 10:00 - 14:00
+        <div class="horario-texto">
+            🕒 <strong>Horario de atención (Otoño):</strong><br>
+            Lunes a Viernes: 9:00 - 20:00 | Sábados: 10:00 - 14:00
+        </div>
+
+        <!-- Acciones debajo -->
+        <div class="header-actions">
+            <a href="#contacto-trabaja" class="btn-cita">📅 Pedir cita</a>
+            <a href="https://wa.me/34600000000" target="_blank" class="btn-whatsapp">💬 WhatsApp</a>
+        </div>
     </div>
+
+
 
     <!-- Ocupa casi todas las secciones que restan hasta footer -->
     <main>
@@ -455,8 +482,7 @@
                     <img src="img/perro-tranquilo.jpeg" alt="Perro tranquilo en el campo" loading="lazy"
                         data-historia="Aquí puedes escribir tu historia emocional o divertida sobre este nuevo amiguito 🐶❤️">
 
-                    <img src="img/perro-relajo.jpeg"
-                        alt="Perrito con dueno" loading="lazy"
+                    <img src="img/perro-relajo.jpeg" alt="Perrito con dueno" loading="lazy"
                         data-historia="El mejor regalo de mi recuperacion fue volver a los brazos de mi humano 🐕❤️">
                 </div>
 

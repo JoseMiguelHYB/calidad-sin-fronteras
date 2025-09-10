@@ -30,6 +30,10 @@ header {
     z-index: 1000;
 }
 
+/* Nav centrado */
+.header-nav {
+  justify-self: center;
+}
 
 header .header-nav {
     display: flex;
@@ -37,6 +41,70 @@ header .header-nav {
     align-items: center;
     position: relative;
 }
+
+/* Contenedor de los botones */
+.header-actions {
+  display: flex;
+  justify-content: center;  /* centra horizontalmente */
+  gap: 15px;                /* espacio entre botones */
+  margin-top: 12px;         /* separación respecto al texto de arriba */
+}
+
+/* Estilo base de botones */
+.header-actions a {
+  padding: 12px 24px;       /* más grandes */
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+/* Botón Pedir cita */
+.btn-cita {
+  background: #ff6600;   /* azul corporativo */
+  color: #ffffff;
+}
+.btn-cita:hover {
+  background: #cc5200;   /* un azul más oscuro */
+}
+
+/* Botón WhatsApp */
+.btn-whatsapp {
+  background: #25D366;   /* verde oficial WhatsApp */
+  color: #fff;
+}
+.btn-whatsapp:hover {
+  background: #1ebe57;   /* verde más oscuro */
+}
+
+
+
+
+/* Contenedor general del header */
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | nav centrado | botones */
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Logo siempre a la izquierda */
+.logo {
+  justify-self: start;
+}
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+
+
 
 /* Botón hamburguesa */
 .menu-toggle {
@@ -50,16 +118,16 @@ header .header-nav {
     left: 15px;
 }
 
-/* Contenedor del nav */
-header .header-nav nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.header-nav nav ul {
+  display: flex;
+  justify-content: center; /* 🔥 centrado horizontal */
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 /* Enlaces */
 header .header-nav nav ul li a {
@@ -131,17 +199,52 @@ header .header-nav nav ul li a:hover {
 
 
 /************************ Horario de atención **************************************/
+/* Horario de atención */
 .horario-atencion {
     background-color: #ffffff;
     color: #004aad;
     text-align: center;
-    padding: 12px 20px;
+    padding: 20px;              /* un poco más de aire */
     margin: 30px auto;
     max-width: 900px;
     font-size: 18px;
     border: 2px solid #004aad;
     border-radius: 10px;
     font-weight: 600;
+}
+
+.horario-texto {
+    margin-bottom: 15px;              /* espacio entre horario y botones */
+    font-family: 'Roboto Mono', monospace;  /* estilo técnico-informativo */
+    font-size: 19px;
+    color: #333333;                   /* gris oscuro, más legible */
+    letter-spacing: 0.5px;            /* un poco de espacio entre letras */
+    line-height: 1.5;
+}
+
+
+.btn-cita, .btn-whatsapp {
+    padding: 12px 24px;         /* más grandes */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;            /* aumenta el tamaño de letra */
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.btn-cita {
+    background: #ff6600;
+    color: #fff;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+}
+
+.btn-cita:hover, .btn-whatsapp:hover {
+    transform: scale(1.05);     /* efecto al pasar el ratón */
 }
 
 
