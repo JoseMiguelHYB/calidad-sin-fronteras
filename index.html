@@ -26,10 +26,7 @@
 
             <!-- Navegación -->
             <div class="header-nav">
-                <!-- Botón hamburguesa -->
                 <button class="menu-toggle">☰</button>
-
-                <!-- Menú normal (desktop) -->
                 <nav>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
@@ -53,24 +50,7 @@
                 </a>
             </div>
         </div>
-
-        <!-- Menú móvil oculto por defecto -->
-        <div class="mobile-menu">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quienes-somos">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#centros">Centros</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#promociones">Promo</a></li>
-                <li><a href="#opiniones">Opiniones</a></li>
-                <li><a href="#mural">Mural</a></li>
-                <li><a href="#contacto-trabaja">Contacto</a></li>
-                <li><a href="#contacto-trabaja">Trabaja</a></li>
-            </ul>
-        </div>
     </header>
-
 
 
     <!-- Hero -->
@@ -82,12 +62,48 @@
                     <span class="tagline">Calidad sin Fronteras</span>
                 </h1>
             </div>
-            <p class="slogan">Nos cuidan porque somos parte de la familia 🐶🐱</p>
+            <p class="slogan">Cada foto cuenta una historia de amor, cuidado y recuperacion.</p>
         </div>
-        <div class="hero-image-container">
-            <!-- No usar loading="lazy"-->
-            <img src="img/barbi-oso.jpg" alt="Dos perros jugando en un campo" class="hero-img" loading="eager">
-        </div>
+        <!-- Galería de mascotas -->
+        <!-- Galería de mascotas -->
+        <section id="mural" class="mural-section">
+            <div class="mural-grid">
+                <!-- Ciclo 1 -->
+                <img src="img/perro-4.PNG" alt="Perro feliz" loading="lazy"
+                        data-historia="Llegue muy enfermito a la clinica, pero gracias al carino y cuidados ahora salto y soy feliz 🐾">
+                <img src="img/perro-1.jpg" alt="Gato curioso">
+                <img src="img/gato-13.jpg" alt="Loro verde">
+
+                <!-- Ciclo 2 -->
+                <img src="img/perro-8.PNG" alt="Cachorro tierno">
+                <img src="img/perro-3.jpg" alt="Gatito dormido">
+
+                <img src="img/barbi-oso.jpg" alt="Periquitos juntos">
+
+                <!-- Ciclo 3 -->
+                <img src="img/perro-5.PNG" alt="Bulldog francés">
+                <img src="img/perro-6.PNG" alt="Gato con bufanda amarilla">
+                <img src="img/perro-7.PNG" alt="Cacatúa blanca">
+
+                <!-- Ciclo 4 -->
+                <img src="img/perro-5.PNG" alt="Bulldog francés">
+                <img src="img/gato-11.PNG" alt="Gato con bufanda amarilla">
+            </div>
+            <!-- Cuerda con tarjetitas -->
+            <div class="cuerda">
+                <div class="tarjeta">💖 Gracias por curarme</div>
+                <div class="tarjeta">🐾 Ahora corro feliz</div>
+                <div class="tarjeta">✨ Me devolvieron mi alegria</div>
+                <div class="tarjeta">🥰 Estoy sano otra vez</div>
+                <div class="tarjeta">🐶 Gracias por cuidarme</div>
+            </div>
+        </section>
+
+
+
+
+
+
     </section>
 
     <!-- Horario de atención -->
@@ -103,8 +119,6 @@
             <a href="https://wa.me/34600000000" target="_blank" class="btn-whatsapp">💬 WhatsApp</a>
         </div>
     </div>
-
-
 
     <!-- Ocupa casi todas las secciones que restan hasta footer -->
     <main>
@@ -199,8 +213,7 @@
                     <div class="centro-mapa">
                         <iframe id="mapa-centro"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.936484949503!2d-3.6480486!3d40.403017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42261f02d9cd9b%3A0x68e8ff9f93b9063!2sC.%20de%20Arroyo%20de%20Fontarr%C3%B3n%2C%2049%2C%2028030%20Madrid!5e0!3m2!1ses!2ses!4v1693244324230!5m2!1ses!2ses"
-                            width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy"
-                            title="Mapa de ubicación en Calle de Arroyo de Fontarrón 49, Madrid">
+                            width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
 
                         <!-- Tiempos aproximados -->

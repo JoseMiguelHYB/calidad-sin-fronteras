@@ -15,8 +15,9 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
     text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 /************************ Navbar **************************************/
@@ -163,7 +164,7 @@ header .header-nav nav ul li a:hover {
     /* azul corporativo para contraste */
     text-align: center;
     width: 100%;
-    border-bottom: 6px solid #004aad;
+    /*border-bottom: 6px solid #004aad;
     /* franja azul */
     margin-top: 50px;
     /* altura aprox del header */
@@ -198,24 +199,28 @@ header .header-nav nav ul li a:hover {
     padding-bottom: 50px;
 }
 
-.hero-image-container {
-    width: 100%;
-    height: 400px;
-    /* defines la altura del bloque */
-    margin-top: 0;
-    overflow: hidden;
-    /* recorta la imagen sobrante */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+/****************************CARRUSEL DE PORTADA*************************************************/
+
+.mural-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* columnas automáticas */
+  gap: 15px; /* espacio entre fotos */
+  padding: 20px;
+  background: #fff;
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* la imagen se ajusta al contenedor */
-    display: block;
+.mural-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* recorta para que queden uniformes */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
+.mural-grid img:hover {
+  transform: scale(1.05);
+}
 
 
 
@@ -830,11 +835,16 @@ header .header-nav nav ul li a:hover {
     top: 10px;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: #c49a6c;
-    /* color cuerda */
-    border-radius: 5px;
+    height: 40px; /* más alto para la curva */
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='40'><path d='M0 20 Q 50 0, 100 20 T 200 20 T 300 20 T 400 20 T 500 20' stroke='%23c49a6c' stroke-width='3' fill='transparent'/></svg>") repeat-x;
+    background-size: 200px 40px;
 }
+
+
+
+
+
+
 
 .tarjeta {
     position: relative;
@@ -1118,3 +1128,5 @@ footer {
     box-sizing: border-box;
   }
 }
+
+/********************************Redimensiona servicios********************************************/
